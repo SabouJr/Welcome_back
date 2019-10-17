@@ -1,0 +1,162 @@
+.chapter1 {
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/img/backgroundChapter1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes apparition{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+.trait{
+  width: 1px;
+  height: 650px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 18%;
+  &::before{
+    content: '';
+    animation: apparition 3s forwards ;
+    background-color: yellow;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    transform: translateX(-50px);
+  }
+}
+
+.chapter1__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+
+.IntroChapter {
+  color: white;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Courier', sans-serif;
+
+  h1 {
+    margin: 5vh 0 0vh 0;
+    font-size: 4em;
+    font-family: 'Headliner No. 45', sans-serif;
+  }
+}
+
+.contentIntroChapter {
+  width: 100vw;
+  display: flex; 
+  justify-content: center;
+  flex-direction: row;
+  height: 80vh
+
+}
+
+.part__introChapter {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.nameIntroChapter {
+  font-size: 2em;
+}
+
+
+.part__introChapter__Content {
+  width: 30vw;
+
+
+  h3 {
+    font-weight: bolder
+  }
+
+  h4 {
+    margin-top: 2vh;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 4vh;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 3vh;
+  }
+}
+
+.part__introChapter__Image {
+  width: 40vw;
+  display: flex;
+  align-items: flex-end;
+  align-content: space-around;
+  justify-content: inherit;
+  flex-direction: column;
+}
+
+
+.Soldat1 {
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  right: 22vw;
+  top: 62vh;
+  z-index: 1;
+}
+
+.Soldat2 {
+  width: 25vw;
+  height: auto;
+}
+
+.Soldat3 {
+  margin-top: 2vh;
+  width: 20vw;
+  height: auto;
+}
+
+
+.quote1__chapter1 {
+  margin: 10vh 0 -8vh 0;
+  text-align: end;
+  line-height: 3vh;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Jim1 {
+  position: absolute;
+  transform: translate(-14vw, 10vh);
+  width: 20vw;
+}
+
+.Jim2 {
+  margin-top: 20vh;
+  width: 25vw;
+  height: auto;
+}
+
+.Jim3 {
+  margin-top: 2vh;
+  width: 20vw;
+  height: auto;
+}
+
+.Measures {
+  padding-top: 20vh;
+  color: white;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Courier', sans-serif;
+}

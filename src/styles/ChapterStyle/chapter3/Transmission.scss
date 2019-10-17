@@ -1,0 +1,82 @@
+.Transmission{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Transmission__title{
+  margin: 10vh 0 12.5vh 0;
+  font-size: 4em;
+  font-family: 'Headliner No. 45', sans-serif;
+}
+
+.Transmission__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+}
+.traitTransmision{
+  width: 1px;
+  height: 600px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 11%;
+  &::before{
+    content: '';
+    animation: apparition 3s forwards ;
+    background-color: yellow;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    transform: translateX(-50px);
+  }
+}
+.Transmission__text{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  font-weight: 600;
+  line-height: 3vh;
+}
+
+.Transmission__text--1{
+  width: 22vw;
+ 
+}
+
+.Transmission__text--2{
+  margin-top: 10vh;
+  width: 30vw;
+}
+
+.Transmission__img{
+  display: flex;
+  flex-direction: column;
+}
+
+.Transmission1{
+  position: relative;
+  right: 10vw;
+  top: 1vh;
+  width: 25vw;
+  z-index: 1;
+}
+
+.Transmission2{
+  z-index: 2;
+  position: relative;
+  right: -1vw;
+  top: -10vh;
+  width: 25vw;
+} 
+
+.todayResults {
+  text-align: center;
+  width: 50vw;
+  font-weight: bold;
+  line-height: 3vh;
+}

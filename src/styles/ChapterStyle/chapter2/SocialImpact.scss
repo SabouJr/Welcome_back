@@ -1,0 +1,53 @@
+.Title__SocialImpact{
+  font-family: 'Headliner No. 45', sans-serif;
+  font-size: 4em;
+  margin: 5%;
+}
+.traitLife{
+  width: 1px;
+  height: 720px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 15%;
+  &::before{
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    transform: translateX(-50px);
+  }
+}
+
+.paragraph__SocialImpact{
+  width: 35vw;
+  font-size: 16px;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+  line-height: 3vh;
+}
+.content__SocialImpact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70vw;
+}
+.first__part__SocialImpact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 60vh;
+}
+
+.Soldats22{
+  height: 44vh;
+  width: auto;
+}
+
+.SocialImpact{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,173 @@
+.ptsdMechanism {
+  color: white;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Courier', sans-serif;
+
+  h2 {
+    margin: 10vh 0 12.5vh 0;
+    font-size: 4em;
+    font-family: 'Headliner No. 45', sans-serif;
+  }
+}
+.traitSchema{
+  width: 1px;
+  height: 1100px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 12%;
+  &::before{
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    transform: translateX(-50px);
+  }
+}
+
+.ptsdMechanism__contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ptsdMechanism__content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  flex-wrap: wrap;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0.1vh;
+    width: 10vw;
+    position: absolute;
+    background-color: yellow;
+    transform: translate(30vw, -6vh);
+  }
+
+  div {
+    line-height: 6vh;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.3em;
+    font-weight: bolder;
+  }
+
+  p {
+    font-weight: lighter;
+    line-height: 2.5vh;
+  }
+}
+
+img {
+  transition: transform 0.4s ease;
+
+    &:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+}
+
+
+.ptsdMechanism__content2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  flex-wrap: wrap;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0.1vh;
+    width: 10vw;
+    position: absolute;
+    background-color: yellow;
+    transform: translate(40vw, -6vh);
+  }
+
+
+
+  div {
+    line-height: 6vh;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.3em;
+    font-weight: bolder;
+  }
+
+  p {
+    font-weight: lighter;
+    line-height: 2.5vh;
+  }
+}
+
+.Step {
+  text-align: center;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+
+  h3 {
+    line-height: 5vh;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}
+
+.Steps {
+  transform: translateY(-1vh);
+  text-align: center;
+  width: 33vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    line-height: 5vh;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}
+
+.quote2__chapter1__part1 {
+  margin: 5vh 0 0vh 0;
+  text-align: center;
+  line-height: 3vh;
+  font-size: 22px;
+  font-weight: bold;
+  width: 60vw;
+}
+
+.quote2__chapter1__part2 {
+  margin: 0vh 0 10vh 0;
+  text-align: end;
+  line-height: 3vh;
+  font-size: 22px;
+  font-weight: bold;
+  width: 60vw;
+}

@@ -1,0 +1,36 @@
+@keyframes start {
+  from{width: 0vw;}
+  to{width: 25vw;}
+}
+
+.Title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 70vw;
+  color: #F8EF48;
+  font-family: 'Headliner No. 45', sans-serif;
+  font-size: 4.5em;
+  margin-top: 2vh;
+
+  &::after {
+    width: 0vw;
+    height: 0.15vh;
+    background-color: #F8EF48;
+    content: '';
+    display: block;
+    transform: translateX(1vw);
+    animation: start 3s forwards;
+  }
+  &::before {
+    width: 25vw;
+    height: 0.15vh;
+    background-color: #F8EF48;
+    content: '';
+    display: block;
+    animation: start 3s forwards;
+    transform: translateX(-1vw);
+  }
+}
+

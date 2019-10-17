@@ -1,0 +1,145 @@
+.Veterans {
+  color: white;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Courier', sans-serif;
+
+  h2 {
+    margin: 10vh 0 12.5vh 0;
+    font-size: 4em;
+    font-family: 'Headliner No. 45', sans-serif;
+  }
+}
+.Measures h1{
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    width: 70vw;
+    color: white;
+    font-family: 'Headliner No. 45', sans-serif;
+    font-size: 4.5em;
+    margin-top: 2vh;
+}
+.traitVeteran{
+  width: 1px;
+  height: 700px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 11%;
+  &::before{
+    content: '';
+    animation: apparition 3s forwards ;
+    background-color: yellow;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    transform: translateX(-50px);
+  }
+}
+.traitMesure{
+  width: 1px;
+  height: 755px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 6%;
+  &::before{
+    content: '';
+    animation: apparition 3s forwards ;
+    background-color: yellow;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    transform: translateX(-50px);
+  }
+}
+
+.contentVeterans {
+  width: 100vw;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 10vh;
+
+}
+
+.part__Veterans {
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameVeterans {
+  font-size: 2em;
+}
+
+
+.part__Veterans__Content {
+  width: 45vw;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-around;
+  margin-left: 2.5vw;
+
+
+  p {
+    margin-bottom: 3vh;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 3vh;
+  }
+}
+
+.part__Veterans__Image {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  margin-right: 2.5vw;
+  line-height: 3vh;
+}
+
+
+.Soldat4 {
+  height: auto;
+  width: 34vw;
+}
+
+.quote1__chapter1 {
+  margin: 10vh 0 10vh 0;
+  text-align: end;
+  line-height: 3vh;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.part__Veterans__text {
+  padding-top: 6vh;
+  width: 40vw;
+  text-align: end;
+}
+
+.Veterans1 {
+  width: 24vw;
+  margin-bottom: 15vh;
+}
+
+.Veterans2 {
+  width: 26vw;
+}
+
+.Veterans3 {
+  position: absolute;
+  width: 22vw;
+  left: 26vw;
+}

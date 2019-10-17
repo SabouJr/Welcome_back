@@ -1,0 +1,152 @@
+
+//Hover
+@keyframes toTop {
+  0% {transform: translateY(0vh);
+      opacity: 1
+    }
+  100% {transform: translateY(-15vh);
+        opacity: 0
+      }
+}
+
+@keyframes fromBottom {
+  0% {transform: translateY(20vh);
+      opacity: 0
+    }
+  100% {transform: translateY(0vh);
+        opacity: 1
+      }
+}
+
+
+
+//NO-HOVER
+@keyframes fromTop {
+  0% {transform: translateY(0vh);
+      opacity: 1
+    }
+  100% {transform: translateY(15vh);
+        opacity: 0
+      }
+}
+
+@keyframes toBottom {
+  0% {transform: translateY(-22vh);
+      opacity: 0
+    }
+  100% {transform: translateY(0vh);
+        opacity: 1
+      }
+}
+
+
+
+.profile__cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 66vw;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 10vw;
+    height: 0.2vh;
+    background-color: yellow;
+    transform: translateX(27.5vw);
+    margin-bottom: 5vh;
+  }
+}
+
+.card__profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 45vh;
+  width: 20vw;
+  margin: 2vh 1vw 5vh 1vw;
+  transition: transform 0.5s ease-in-out;
+
+  img {
+    animation: toBottom 0.5s ease-in-out;
+
+  }
+
+  .card__profile__name {
+    animation: toBottom 0.5s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s;
+    z-index: 1;
+    
+    .card__profile__name {
+      opacity: 0;
+      animation: toTop 0.5s ease-in-out;
+      
+    }
+
+    img {
+      opacity: 0;
+      animation: toTop 0.5s ease-in-out;
+    }
+
+    .name__Chapter {
+      opacity: 1;
+      animation: fromBottom 0.5s ease-in-out; 
+    }
+  }
+
+
+  &::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 31.5vh;
+    right: -10.5vw;
+    border-top: 2px solid yellow;
+    border-right: 2px solid yellow;
+  }
+  
+  &::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -31.5vh;
+    left: -10vw;
+    border-bottom: 2px solid yellow;
+    border-left: 2px solid yellow;
+  }
+}
+
+.star{
+  height: 5vh;
+  transform: translateY(2vh);
+}
+
+.card__profile__name{
+  text-align: center;
+  width: 7vw;
+  font-size: 40px;
+  font-family: 'Headliner No. 45', sans-serif;
+}
+
+.name__Chapter {
+  opacity: 0;
+  font-family: 'Headliner No. 45', sans-serif;
+  font-size: 40px;
+  transform: translateY(-1vh);
+  position: absolute;
+  animation: fromTop 0.5s ease-in-out;
+}
